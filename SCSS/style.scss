@@ -1,0 +1,54 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+$primary: #FF892C;
+$logo-stroke: #CC5803;
+$nadpis-clanek: #EE3D3D;
+$seda-formular: #EAD7D7;
+
+$font-base: "Instrument Sans", Helvetica, Arial, sans-serif;
+$font-logo: "Poiret One", "Montserrat", sans-serif;
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: $font-base;
+    background-color: white;
+}
+
+.header__logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: black;
+    font-family: $font-logo;
+    font-size: 24px;
+    border: 3px solid $logo-stroke;
+}
+
+.menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*.menu__item {
+	margin: 0;
+	padding: 0;
+} */
+
+.menu__link {
+	display: block;
+	padding: 20px;
+	font-family: $font-base;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.menu__link:hover {
+	background-color: $primary;
+}
