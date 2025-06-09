@@ -7,9 +7,13 @@ html {
 }
 
 body {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
   font-family: "Instrument Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
   background-color: white;
 }
 
@@ -17,7 +21,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 3%;
+}
+
+.header__logo {
+  width: 20%;
 }
 
 .menu__list {
@@ -33,18 +41,17 @@ body {
 } */
 .menu__link {
   display: block;
-  padding: 20px;
+  padding: 10px;
   font-family: "Instrument Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   text-decoration: none;
   color: black;
 }
 
 .menu__link:hover {
-  background-color: #FF892C;
+  color: #FF892C;
 }
 
 .hero__image {
   width: 100%;
-  height: auto;
 }/*# sourceMappingURL=style.css.map */
