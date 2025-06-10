@@ -9,7 +9,9 @@ $seda-formular: #EAD7D7;
 $font-base: "Instrument Sans", Helvetica, Arial, sans-serif;
 $font-logo: "Poiret One", "Montserrat", sans-serif;
 
-$body-font-size: 16px;
+$font: 16px;
+$font-h2: 20px;
+$font-h3: 18px;
 
 body {
     max-width: 500px;
@@ -60,4 +62,25 @@ body {
 
 .hero__image {
     width: 100%;
+    height: 100px;
+}
+
+.main__a1__title {
+    padding-top:30px;
+    padding-bottom: 20px;
+    font-size: $font-h2;
+
+}
+
+.main__a1__picture {
+    width: 100%;
+    border: 3px solid $primary;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+      body {
+        max-width: 1440px;
+    }
+
 }
