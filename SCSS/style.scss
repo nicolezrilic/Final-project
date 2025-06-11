@@ -8,9 +8,8 @@ $nadpis-clanek: #f77f00;
 $seda-formular: #EAD7D7;
 
 $font-base: "Nunito", Helvetica, Arial, sans-serif;
-$font-logo: "Poiret One", "Montserrat", sans-serif;
 
-$velikost: 14px;
+$velikost: 13px;
 $velikost-h2: 16px;
 
 body {
@@ -26,14 +25,18 @@ body {
 }
 
 .header__inner {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     margin-top: 30px;
 }
 
 .header__logo {
     width: 20%;
+    position: absolute;
+    left: 45px;
+    top: 15px;
 }
 
 .menu__list {
@@ -56,25 +59,20 @@ body {
 	color: $primary;
 }
 
-.hero-image {
+.hero-image-as-background {
     width: 100%;
-    height: auto;
-}
-
-/*.hero-image {
-    width: 500px;
-    height: 500px; 
-    background-image: url(/Images/Mexico_animated.jpg);
+    height: 150px; 
+    background-image: url(../Images/Mexico_animated.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}*/
+}
 
 .main {
 
     &__a1-title,
     &__a2-title {
 
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 20px;
         margin: 0;
         font-family: $font-base;
@@ -88,10 +86,10 @@ body {
         border: 2px solid $logo-stroke;
         border-radius: 5%;
 }
+
 }
 
 .read-more {
-    margin-bottom: 50px;
     padding: 5px 10px;
     border: 1px solid;
     border-radius: 10%;
@@ -103,6 +101,7 @@ body {
 .footer {
     font-size: 12px;
     color: #adb5bd;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
