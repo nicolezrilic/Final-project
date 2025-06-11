@@ -6,12 +6,14 @@ html {
   box-sizing: inherit;
 }
 
+/*$obrazek-stroke: #ca6702;*/
 body {
   max-width: 500px;
   margin: 0 auto;
   padding: 0 20px;
+  line-height: 1.5;
   text-align: center;
-  font-family: "Instrument Sans", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-optical-sizing: auto;
   background-color: white;
@@ -35,14 +37,10 @@ body {
   display: flex;
 }
 
-/*.menu__item {
-	margin: 0;
-	padding: 0;
-} */
 .menu__link {
   display: block;
   padding: 10px;
-  font-family: "Instrument Sans", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-decoration: none;
   color: black;
@@ -52,26 +50,40 @@ body {
   color: #FF892C;
 }
 
-.hero__image {
+.hero-image {
   width: 100%;
   height: auto;
 }
 
-.main__a1__title, .main__a2__title {
+/*.hero-image {
+    width: 500px;
+    height: 500px; 
+    background-image: url(/Images/Mexico_animated.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+.main__a1-title, .main__a2-title {
   padding-top: 30px;
   padding-bottom: 20px;
+  margin: 0;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #f77f00;
 }
-.main__a1__picture, .main__a2__picture {
-  width: 100%;
-  border: 2px solid #ca6702;
+.main__a1-picture, .main__a2-picture {
+  width: 80%;
+  border: 2px solid #CC5803;
   border-radius: 5%;
-  margin-top: 50px;
 }
 
 .read-more {
-  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 10%;
+  background-color: #FF892C;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 .footer {
@@ -80,8 +92,10 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1440px) {
-  body {
-    max-width: 1440px;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*@media screen and (min-width: 1100px) and (max-width: 1440px) {
+
+      body {
+        max-width: 1440px;
+    }
+
+}*//*# sourceMappingURL=style.css.map */
