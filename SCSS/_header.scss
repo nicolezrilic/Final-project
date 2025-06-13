@@ -2,29 +2,34 @@
 @use "base";
 @use "text";
 
-.header__inner {
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-top: 30px;
+.header {
+    
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-top: 30px;
 }
 
-.header__logo {
+    &__logo {
     width: 20%;
     position: absolute;
     left: 45px;
     top: 15px;
 }
-
-.menu__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
 }
 
-.menu__link {
+.menu {
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__link {
 	display: block;
 	padding: 10px;
 	font-family: text.$font-base;
@@ -33,8 +38,9 @@
 	color: black;
 }
 
-.menu__link:hover {
+    &__link:hover {
 	color: colors.$primary;
+}
 }
 
 .hero-image-as-background {
