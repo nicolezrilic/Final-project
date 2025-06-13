@@ -1,0 +1,37 @@
+@use "colors";
+@use "text";
+@use "base";
+
+.main {
+
+    &__a1-title,
+    &__a2-title {
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin: 0;
+        font-family: text.$font-base;
+        font-size: text.$size-h2;
+        color: colors.$title-article;
+}
+ 
+    &__a1-picture,
+    &__a2-picture {
+        width: 80%;
+        border: 2px solid colors.$logo-stroke;
+        border-radius: 5%;
+}
+
+    &__button {
+        padding: 5px 10px;
+        border: 1px solid colors.$primary;
+        border-radius: 10%;
+        background-color: colors.$primary;
+        font-family: text.$font-base;
+    }
+
+    .read-more {
+        color: white;
+        text-decoration: none;
+}
+}

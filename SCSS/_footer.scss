@@ -1,0 +1,9 @@
+@use "text";
+@use "colors";
+
+.footer {
+    font-size: text.$size-footer;
+    color: colors.$footer;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

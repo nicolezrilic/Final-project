@@ -1,3 +1,4 @@
+/*$obrazek-stroke: #ca6702;*/
 html {
   box-sizing: border-box;
 }
@@ -6,7 +7,6 @@ html {
   box-sizing: inherit;
 }
 
-/*$obrazek-stroke: #ca6702;*/
 body {
   max-width: 500px;
   margin: 0 auto;
@@ -75,14 +75,16 @@ body {
   border: 2px solid #CC5803;
   border-radius: 5%;
 }
-
-.read-more {
+.main__button {
   padding: 5px 10px;
-  border: 1px solid;
+  border: 1px solid #FF892C;
   border-radius: 10%;
   background-color: #FF892C;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+.main .read-more {
   color: white;
+  text-decoration: none;
 }
 
 .footer {
@@ -90,12 +92,4 @@ body {
   color: #adb5bd;
   margin-top: 50px;
   margin-bottom: 10px;
-}
-
-/*@media screen and (min-width: 1100px) and (max-width: 1440px) {
-
-      body {
-        max-width: 1440px;
-    }
-
-}*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
