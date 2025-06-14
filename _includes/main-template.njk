@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+<!--Nunito font Regular 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+<!--Nunito font Bold 700-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="header">
+
+        <div class="header__inner">
+            
+            <img class="header__logo" src="Images/Logo140.svg" alt="logo Poznej španělský svět">
+           
+		        <nav class="menu">
+			        <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Úvod</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">O projektu</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Blog ↓</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
+                    </ul>
+		        </nav>
+        </div>
+
+        <div class="hero-image-as-background"></div>
+
+    </section>
+	
+    <section class="main">
+
+
+        {{ content | safe }}
+
+
+    </section>
+            
+    <section class="footer">
+
+        <p>&copy 2025, Nicole Zrilić, Staň se kodérkou, Czechitas</p>
+    
+    </section>
+            
+</body>
+</html>
