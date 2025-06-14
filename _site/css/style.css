@@ -54,7 +54,7 @@ body {
 .hero-image-as-background {
   width: 100%;
   height: 150px;
-  background-image: url(../Images/Mexico_animated.jpg);
+  background-image: url(../Images/Mexico_animated_komprese.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,4 +89,18 @@ body {
   color: #adb5bd;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.about_project1-title {
+  font-size: 14px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.about_project2-picture {
+  max-width: 100%;
+  height: 344px;
+  border: 2px solid #CC5803;
+  border-radius: 5%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @use "text";
 @use "colors";
+@use "base";
 
 .footer {
     font-size: text.$size-footer;
