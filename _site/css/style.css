@@ -70,7 +70,12 @@ body {
 .main__a1-picture, .main__a2-picture {
   width: 80%;
   border: 2px solid #CC5803;
-  border-radius: 5%;
+}
+.main__a1-picture {
+  border-radius: 0 5%;
+}
+.main__a2-picture {
+  border-radius: 5% 0;
 }
 .main__button {
   padding: 5px 10px;
@@ -79,7 +84,8 @@ body {
   background-color: #FF892C;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
-.main .read-more {
+
+.read-more {
   color: white;
   text-decoration: none;
 }
@@ -104,8 +110,6 @@ body {
   height: 300px;
   margin-top: 50px;
   margin-bottom: 200px;
-  margin-right: 0;
-  margin-left: 0;
   background-image: url(../Images/mi\ foto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
