@@ -2,20 +2,31 @@
 @use "text";
 @use "base";
 
-.about_project1-title {
+.project {
 
-        font-size: text.$size-menu-link;
-        margin: 0;
-        padding-top: 50px;
-        padding-bottom: 20px;
+        &__1-title {
+
+                font-family: text.$font-base;
+                font-size: text.$size-h2;
+                color: colors.$title-article;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                margin: 0;
+        }
+
+        &__2 {
+                width: 80%;
+                height: 300px; 
+                margin-top: 50px;
+                margin-bottom: 200px;
+                margin-right: 0;
+                margin-left: 0;
+                background-image: url(../Images/mi\ foto.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border: 2px solid colors.$logo-stroke;
+                border-radius: 5%;
+                
+        }
     }
-
-.about_project2-picture {
-
-        max-width: 100%;
-        height: 344px;
-        border: 2px solid colors.$logo-stroke;
-        border-radius: 5%;
-
-
-}
