@@ -10,21 +10,35 @@
                 font-size: text.$size-h2;
                 color: colors.$title-article;
                 padding-top: 50px;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
+                margin: 0;
+
+                &::after {
+                        content: "";
+                        display: block;
+                        width: 60px;
+                        height: 2px;
+                        background-color: colors.$logo-stroke;
+                        margin-top: 10px;
+                        margin-right: auto;
+                        margin-left: auto;
+                }
+        }
+
+        &__1-paragraph {
                 margin: 0;
         }
 
-        &__2 {
-                width: 80%;
-                height: 300px; 
-                margin-top: 50px;
-                margin-bottom: 200px;
-                background-image: url(../Images/mi\ foto.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+        &__2-picture {
+                width: 70%;
                 border: 2px solid colors.$logo-stroke;
                 border-radius: 5%;
-                
+                margin-top: 50px;
+                margin-bottom: 50px;
         }
-    }
+    
+        &__ilustration {
+                width: 40%;
+        }
+}
+

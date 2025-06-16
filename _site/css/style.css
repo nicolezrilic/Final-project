@@ -102,18 +102,29 @@ body {
   font-size: 16px;
   color: #f77f00;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0;
 }
-.project__2 {
-  width: 80%;
-  height: 300px;
-  margin-top: 50px;
-  margin-bottom: 200px;
-  background-image: url(../Images/mi\ foto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.project__1-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #CC5803;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.project__1-paragraph {
+  margin: 0;
+}
+.project__2-picture {
+  width: 70%;
   border: 2px solid #CC5803;
   border-radius: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project__ilustration {
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */
