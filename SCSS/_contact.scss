@@ -1,0 +1,12 @@
+@use "base";
+@use "colors";
+@use "text";
+@use "footer";
+@use "header";
+
+.kontakt__1-paragraph {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: text.$size-menu-link;
+        color: colors.$primary;
+}

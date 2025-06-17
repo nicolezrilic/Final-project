@@ -127,4 +127,11 @@ body {
 }
 .project__ilustration {
   width: 40%;
+}
+
+.kontakt__1-paragraph {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #FF892C;
 }/*# sourceMappingURL=style.css.map */
