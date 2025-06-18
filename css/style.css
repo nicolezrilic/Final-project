@@ -50,10 +50,10 @@ body {
 .menu__link:hover {
   color: #FF892C;
 }
-.menu__link:hover__item {
+.menu__item {
   position: relative;
 }
-.menu__link:hover__item:hover .submenu {
+.menu__item:hover .submenu {
   display: block;
 }
 
@@ -76,7 +76,6 @@ body {
 .hero-image {
   width: 100%;
   height: 150px;
-  background-image: url(../Images/Mexico_animated.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 0;
@@ -158,4 +157,13 @@ body {
   padding-bottom: 20px;
   font-size: 14px;
   color: #FF892C;
+}
+
+.kontakt__1-odkaz1, .kontakt__odkaz2, .kontakt__odkaz3 {
+  color: #CC5803;
+  text-decoration: none;
+}
+.kontakt .kontakt__2-picture {
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

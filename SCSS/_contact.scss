@@ -10,3 +10,20 @@
         font-size: text.$size-menu-link;
         color: colors.$primary;
 }
+
+.kontakt {
+        
+        &__1-odkaz1,
+        &__odkaz2,
+        &__odkaz3 {
+                color: colors.$logo-stroke;
+                text-decoration: none;
+        }
+
+.kontakt__2-picture {
+        display: block;
+        margin: 0 auto;
+}
+
+
+}
