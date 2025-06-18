@@ -10,14 +10,14 @@
         justify-content: right;
         align-items: center;
         margin-top: 30px;
-}
+    }
 
     &__logo {
-    width: 20%;
-    position: absolute;
-    left: 45px;
-    top: 15px;
-}
+        width: 20%;
+        position: absolute;
+        left: 45px;
+        top: 15px;
+    }
 }
 
 .menu {
@@ -30,23 +30,49 @@
     }
 
     &__link {
-	display: block;
-	padding: 10px;
-	font-family: text.$font-base;
-	font-size: text.$size-menu-link;
-	text-decoration: none;
-	color: black;
-}
+        display: block;
+        padding: 10px;
+        font-family: text.$font-base;
+        font-size: text.$size-menu-link;
+        text-decoration: none;
+        color: black;
+    }
 
     &__link:hover {
-	color: colors.$primary;
-}
+	    color: colors.$primary;
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:hover .submenu {
+        display: block;
+    }
+    }
 }
 
-.hero-image-as-background {
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0.5em;
+
+        &__-toggle {
+            display: none;
+        }
+
+            &__:checked~ .submenu {
+                display: block;
+            }
+}
+
+.hero-image {
     width: 100%;
     height: 150px; 
     background-image: url(../Images/Mexico_animated.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    object-position: 0 0;
 }

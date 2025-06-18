@@ -50,13 +50,37 @@ body {
 .menu__link:hover {
   color: #FF892C;
 }
+.menu__link:hover__item {
+  position: relative;
+}
+.menu__link:hover__item:hover .submenu {
+  display: block;
+}
 
-.hero-image-as-background {
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0.5em;
+}
+.submenu__-toggle {
+  display: none;
+}
+.submenu__:checked ~ .submenu {
+  display: block;
+}
+
+.hero-image {
   width: 100%;
   height: 150px;
   background-image: url(../Images/Mexico_animated.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
 }
 
 .main__a1-title, .main__a2-title {

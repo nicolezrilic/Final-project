@@ -30,15 +30,23 @@
            
 		        <nav class="menu">
 			        <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Úvod</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">O projektu</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Blog ↓</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
+                        <li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+                        <li class="menu__item"><a href="/projekt" class="menu__link">O projektu</a></li>
+                        <li class="menu__item">
+                            <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+                            <label for="submenu-toggle" class="menu__link">Blog ↓</label>
+                            <ul class="submenu">
+                                <li><a class="menu__link" href="/jizni-amerika">Amerika</a></li>
+                                <li><a class="menu__link" href="/spanelsko">Spanelsko</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="/kontakt" class="menu__link">Kontakt</a></li>
                     </ul>
 		        </nav>
         </div>
 
-        <div class="hero-image-as-background"></div>
+        <img src="../Images/{{heroimage}}" class="hero-image"></img>
+        <!-- <div class="hero-image-as-background"></div> -->
 
     </section>
 	
