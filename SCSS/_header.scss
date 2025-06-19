@@ -35,11 +35,11 @@
         font-family: text.$font-base;
         font-size: text.$size-menu-link;
         text-decoration: none;
-        color: black;
+        color: colors.$primary;
     }
 
     &__link:hover {
-	    color: colors.$primary;
+	    color: black ;
     }
 
     &__item {

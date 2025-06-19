@@ -45,10 +45,10 @@ body {
   font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-decoration: none;
-  color: black;
+  color: #FF892C;
 }
 .menu__link:hover {
-  color: #FF892C;
+  color: black;
 }
 .menu__item {
   position: relative;
