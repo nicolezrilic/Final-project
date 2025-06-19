@@ -15,7 +15,7 @@
     &__logo {
         width: 20%;
         position: absolute;
-        left: 45px;
+        left: 15px;
         top: 15px;
     }
 }
@@ -36,6 +36,10 @@
         font-size: text.$size-menu-link;
         text-decoration: none;
         color: colors.$primary;
+
+        @media screen and (max-width: 400px) {
+            padding: 5px;
+        }
     }
 
     &__link:hover {
@@ -46,29 +50,29 @@
         position: relative;
     }
 
-    &__item:hover .submenu {
+    &__item:hover &__submenu {
         display: block;
     }
-    }
 
+    &__submenu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        list-style: none;
+        padding: 0.5em;
 
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 0.5em;
-
-        &__-toggle {
+        &__toggle {
             display: none;
         }
 
-            &__:checked~ .submenu {
+            &__:checked~&__submenu {
                 display: block;
             }
+    }
 }
+
 
 .hero-image {
     width: 100%;

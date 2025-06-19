@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
   text-align: center;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-optical-sizing: auto;
   background-color: white;
 }
@@ -29,7 +29,7 @@ body {
 .header__logo {
   width: 20%;
   position: absolute;
-  left: 45px;
+  left: 15px;
   top: 15px;
 }
 
@@ -43,9 +43,14 @@ body {
   display: block;
   padding: 10px;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: #FF892C;
+}
+@media screen and (max-width: 400px) {
+  .menu__link {
+    padding: 5px;
+  }
 }
 .menu__link:hover {
   color: black;
@@ -53,11 +58,10 @@ body {
 .menu__item {
   position: relative;
 }
-.menu__item:hover .submenu {
+.menu__item:hover .menu__submenu {
   display: block;
 }
-
-.submenu {
+.menu__submenu {
   display: none;
   position: absolute;
   background-color: white;
@@ -66,10 +70,10 @@ body {
   list-style: none;
   padding: 0.5em;
 }
-.submenu__-toggle {
+.menu__submenu__toggle {
   display: none;
 }
-.submenu__:checked ~ .submenu {
+.menu__submenu__:checked ~ .menu__submenu__submenu {
   display: block;
 }
 
@@ -87,7 +91,7 @@ body {
   padding-bottom: 20px;
   margin: 0;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #f77f00;
 }
 .main__a1-picture, .main__a2-picture {
@@ -106,6 +110,7 @@ body {
   border-radius: 10%;
   background-color: #FF892C;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 .read-more {
@@ -122,7 +127,7 @@ body {
 
 .project__1-title {
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #f77f00;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -155,7 +160,7 @@ body {
 .kontakt__1-paragraph {
   padding-top: 50px;
   padding-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #FF892C;
 }
 
