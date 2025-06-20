@@ -19,7 +19,32 @@ heroimg: gaudi.jpg
     <p><b>Doučuji.eu:</b> <br>
     <a class="kontakt__1-odkaz3" href="https://www.doucuji.eu/469114-doucovani-espanol-con-animo-english-with-courage-spanelstina-a-anglictina-s-odvahou">https://www.doucuji.eu/469114-doucovani-espanol-con-animo-english-with-courage-spanelstina-a-anglictina-s-odvahou</a></p>
 
-    <!--zde bude formulář, který bude patřit do třídy kontakt__1-->
+    <form class="kontakt__1-message" action="#" method="post">
+
+        <fieldset>
+
+            <p><b>Nebo mi pošli zprávu:</b> <br>
+
+            <div class="form-field">
+                <label for="jmeno">Jméno*</label>
+                <input type="text" name="jmeno" id="jmeno" autofocus required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="zprava">Zpráva*</label>
+                <textarea name="text" id="zprava" required> </textarea>
+            </div>
+
+            <button class="kontakt__button" type="submit">Odeslat</button>
+
+        </fieldset>
+
+     </form>
 
 </div>
 
