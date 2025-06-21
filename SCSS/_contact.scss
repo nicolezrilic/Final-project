@@ -9,8 +9,16 @@
         &__1-paragraph {
                 padding-top: 50px;
                 padding-bottom: 20px;
+                margin: 0;
                 font-size: text.$size;
                 color: colors.$primary;
+        }
+
+        &__1-email,
+        &__1-linkedin,
+        &__1-doucuji {
+                margin-top: 25px;
+                margin-bottom: 25px;
         }
 
         &__1-odkaz1,
@@ -18,39 +26,46 @@
         &__1-odkaz3 {
                 color: colors.$logo-stroke;
                 text-decoration: none;
+                margin-bottom: 30px;
         }
 
         &__1-message {
                 background-color: colors.$form;
                 border: 2px solid colors.$primary;
                 border-radius: 5%;
+                margin-bottom: 30px;
         }
 
         &__button {
                 padding: 5px 10px;
+                margin-bottom: 16px;
                 border: 2px solid colors.$primary;
                 border-radius: 10%;
                 background-color: white;
                 font-family: text.$font-base;
                 font-size: text.$size;
         }
+
+        &__2-picture {
+                display: block;
+                margin: 0 auto;
+        }
 }
 
 .form-field {
         margin-bottom: 10px;
-
 }
 
 .form-field label {
         display: block;
 }
 
-.form-field {
-        
+.form-field input {
+         width: 300px;
 }
 
-.kontakt__2-picture {
-        display: block;
-        margin: 0 auto;
+.form-field textarea {
+        width: 300px;
+        height: 250px;
+        border-radius: 5%;
 }
-
