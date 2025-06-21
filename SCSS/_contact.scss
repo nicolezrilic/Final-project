@@ -6,7 +6,12 @@
 
 .kontakt {
         
-        &__1-paragraph {
+        @media screen and (min-width: 1100px) {
+                display: flex;
+                align-items: center;
+        }
+
+        &__1-title {
                 padding-top: 50px;
                 padding-bottom: 20px;
                 margin: 0;
@@ -14,16 +19,20 @@
                 color: colors.$primary;
         }
 
+        &__1-text {
+                max-width: 70%;
+                margin: 0 auto;
+        }
+       
+
         &__1-email,
-        &__1-linkedin,
-        &__1-doucuji {
+        &__1-linkedin {
                 margin-top: 25px;
                 margin-bottom: 25px;
         }
 
         &__1-odkaz1,
-        &__1-odkaz2,
-        &__1-odkaz3 {
+        &__1-odkaz2 {
                 color: colors.$logo-stroke;
                 text-decoration: none;
                 margin-bottom: 30px;
@@ -33,7 +42,8 @@
                 background-color: colors.$form;
                 border: 2px solid colors.$primary;
                 border-radius: 5%;
-                margin-bottom: 30px;
+                margin: 0 auto;
+                max-width: 70%;
         }
 
         &__button {
@@ -49,6 +59,16 @@
         &__2-picture {
                 display: block;
                 margin: 0 auto;
+                margin-top: 30px;
+                width: 50%;
+                height: 50%;
+
+                @media screen and (min-width: 1100px) {
+                        
+                        width: 100%;
+                        height: auto;
+                }
+
         }
 }
 
@@ -61,11 +81,11 @@
 }
 
 .form-field input {
-         width: 300px;
+         width: 70%;
 }
 
 .form-field textarea {
-        width: 300px;
-        height: 250px;
+        width: 70%;
+        height: auto;
         border-radius: 5%;
 }

@@ -13,31 +13,44 @@
         font-family: text.$font-base;
         font-size: text.$size-h2;
         color: colors.$title-article;
-}
- 
+
+            @media screen and (min-width: 1100px) {
+                font-size: text.$size-h2-PC;
+            }
+    }
+    
     &__a1-picture,
     &__a2-picture {
         width: 80%;
         border: 3px solid colors.$logo-stroke;
-        }
+    }
 
     &__a1-picture {
         border-radius: 0 5%;
-        }
+    }
 
     &__a2-picture {
         border-radius: 5% 0;
-        }
+    }
 
-    &__button {
+    &__a1-button,
+    &__a2-button {
+
         padding: 5px 10px;
         border: 1px solid colors.$primary;
         border-radius: 10%;
         background-color: colors.$primary;
         font-family: text.$font-base;
         font-size: text.$size;
-        }
     }
+
+    &__a2-button {
+
+            @media screen and (min-width: 1100px) {
+                grid-column: right;
+            }
+    }
+}
 
     .read-more {
         color: white;
