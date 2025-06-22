@@ -65,7 +65,7 @@ body {
 }
 @media screen and (min-width: 1100px) {
   .menu__link {
-    font-size: 20px;
+    font-size: 24px;
     padding: 20px;
   }
 }
@@ -131,6 +131,16 @@ body {
 .main__a2-picture {
   border-radius: 5% 0;
 }
+.main__a1-paragraph, .main__a2-paragraph {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 1100px) {
+  .main__a1-paragraph, .main__a2-paragraph {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .main__a1-button, .main__a2-button {
   padding: 5px 10px;
   border: 1px solid #FF892C;
@@ -140,8 +150,16 @@ body {
   font-size: 16px;
 }
 @media screen and (min-width: 1100px) {
-  .main__a2-button {
-    grid-column: right;
+  .main__a1-button, .main__a2-button {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main {
+    display: flex;
+  }
+  .main__a1, .main__a2 {
+    flex-basis: 50%;
   }
 }
 
@@ -226,6 +244,9 @@ body {
   .kontakt {
     display: flex;
     align-items: center;
+  }
+  .kontakt__1 {
+    min-height: 800px;
   }
 }
 .kontakt__1-title {

@@ -9,6 +9,10 @@
         @media screen and (min-width: 1100px) {
                 display: flex;
                 align-items: center;
+
+                &__1 {
+                        min-height: 800px;
+                }
         }
 
         &__1-title {
