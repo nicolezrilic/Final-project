@@ -4,12 +4,25 @@
 
 .project {
 
-             @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 1200px) {
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: center;
                 align-items: center;
-             }
+        
+                &__1 {
+                        flex-basis: 60%;
+                        padding-right: 30px;
+                }
+
+                &__2 {
+                        flex-basis: 40%;
+                }
+        }
+
+        &__1-text {
+                margin: 0 auto;
+        }
 
         &__1-title {
 
@@ -32,16 +45,6 @@
                 }
         }
 
-        &__1-paragraph {
-               margin: 0;
-
-                @media screen and (min-width: 1100px) {
-                        flex: 1 1 47%;
-                        text-align: center;
-                        padding-right: 30px;
-                }
-        }
-
         &__2-picture {
                 width: 70%;
                 border: 2px solid colors.$logo-stroke;
@@ -49,19 +52,25 @@
                 margin-top: 50px;
                 margin-bottom: 50px;
 
-                @media screen and (min-width: 1100px) {
-                        flex: 1 1 47%;
-                        /*display: block;
-                        width: 41%;
-                        height: auto;*/ 
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                        width: 50%;
+                }
+
+                @media screen and (min-width: 1200px) {
+                        width: 80%;
                 }
         }
 
         &__ilustration {
-                width: 40%;
+                width: 50%;
+                margin: 0 auto;
 
-                @media screen and (min-width: 1100px) {
+                @media screen and (min-width: 768px) {
+                        width: 40%;
+                } 
+
+                @media screen and (min-width: 1200px) {
                         width: 30%;
-                }
+                } 
         }
 }
